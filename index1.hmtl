@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Gallery | Grischa & Jenny</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', 'Segoe UI', serif;
+            background: linear-gradient(135deg, #fef9f0 0%, #fff0e6 100%);
+            min-height: 100vh;
+        }
+
+        /* Language Switcher */
+        .lang-switch {
+            text-align: right;
+            padding: 1rem 2rem;
+            background: white;
+            border-bottom: 1px solid #f0e2d6;
+        }
+
+        .lang-btn {
+            background: none;
+            border: 1px solid #e8cdb5;
+            padding: 5px 12px;
+            margin: 0 3px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            color: #7a5a44;
+            transition: all 0.2s;
+        }
+
+        .lang-btn.active {
+            background: #7a5a44;
+            color: white;
+            border-color: #7a5a44;
+        }
+
+        .lang-btn:hover {
+            background: #e8cdb5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: white;
+            border-radius: 40px;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #7a5a44;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+
+        .divider {
+            width: 60px;
+            height: 2px;
+            background: #e8cdb5;
+            margin: 1rem auto;
+        }
+
+        /* Language content blocks */
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+
+        /* Card style */
+        .card {
+            background: white;
+            border-radius: 30px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .gallery-link {
+            display: inline-block;
+            background: #7a5a44;
+            color: white;
+            padding: 14px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin: 1rem 0;
+            transition: background 0.2s;
+        }
+
+        .gallery-link:hover {
+            background: #5c4230;
+        }
+
+        .qr-code {
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: #faf7f2;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        .qr-placeholder {
+            width: 150px;
+            height: 150px;
+            background: #e8cdb5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #7a5a44;
+            font-size: 0.8rem;
+            border-radius: 15px;
+            margin: 0 auto;
+        }
+
+        .instruction-list {
+            text-align: left;
+            max-width: 500px;
+            margin: 1rem auto;
+            padding-left: 1.5rem;
+        }
+
+        .instruction-list li {
+            margin: 0.8rem 0;
+            line-height: 1.5;
+        }
+
+        .note {
+            background: #f0e8df;
+            padding: 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #8b6b5c;
+            margin-top: 1rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #b28b66;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #bb9b82;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #ecdccf;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .container { padding: 1rem; }
+            .gallery-link { font-size: 1rem; padding: 12px 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Language Switcher -->
+    <div class="lang-switch">
+        <button class="lang-btn" data-lang="en">🇬🇧 English</button>
+        <button class="lang-btn" data-lang="zh">🇨🇳 中文</button>
+        <button class="lang-btn" data-lang="de">🇩🇪 Deutsch</button>
+    </div>
+
+    <div class="container">
+        <div class="hero">
+            <h1 id="gallery-title">Wedding Gallery</h1>
+            <div class="divider"></div>
+            <p id="gallery-subtitle">Share your memories with us</p>
+        </div>
+
+        <!-- ENGLISH CONTENT -->
+        <div id="lang-en" class="lang-content active">
+            <div class="card">
+                <h2 style="color:#7a5a44; margin-bottom: 1rem;">📸 Share Your Photos</h2>
+                <p>We'd love to see the wedding through your eyes! Please upload your photos and videos to our shared album.</p>
+                
+                <a href="#" class="gallery-link" id="google-photos-link-en" target="_blank">📤 Open Google Photos Album</a>
+                
+                <div class="qr-code">
+                    <div class="qr-placeholder" id="qr-placeholder-en">
+                        QR Code<br>↓
+                    </div>
+                    <p style="margin-top: 0.5rem; font-size: 0.8rem;">Scan with your phone</p>
+                </div>
+
+                <h3 style="color:#b28b66; margin: 1.5rem 0 0.5rem;">📱 How to Upload:</h3>
+                <ul class="instruction-list">
+                    <li><strong>On your phone:</strong> Open the link above → tap the <strong>"+" icon</strong> → select your photos</li>
+                    <li><strong>On your computer:</strong> Open the link → click <strong>"Add photos"</strong> → select files</li>
+                    <li><strong>No Google account?</strong> You'll need one to upload. It's free at <a href="https://accounts.google.com/signup" target="_blank" style="color:#7a5a44;">accounts.google.com</a></li>
+                </ul>
+
+                <div class="note">
+                    💡 <strong>Tip:</strong> All photos uploaded to this album are visible to all guests with the link. Please only share appropriate photos. Thank you!
+                </div>
+            </div>
+        </div>
+
+        <!-- CHINESE CONTENT (中文) -->
+        <div id="lang-zh" class="lang-content">
+            <div class="card">
+                <h2 style="color:#7a5a44; margin-bottom: 1rem;">📸 分享您的照片</h2>
+                <p>我们希望能通过您的视角看到婚礼的美好瞬间！请将您的照片和视频上传到我们的共享相册。</p>
+                
+                <a href="#" class="gallery-link" id="google-photos-link-zh" target="_blank">📤 打开 Google 相册</a>
+                
+                <div class="qr-code">
+                    <div class="qr-placeholder" id="qr-placeholder-zh">
+                        二维码<br>↓
+                    </div>
+                    <p style="margin-top: 0.5rem; font-size: 0.8rem;">用手机扫描</p>
+                </div>
+
+                <h3 style="color:#b28b66; margin: 1.5rem 0 0.5rem;">📱 上传方法：</h3>
+                <ul class="instruction-list">
+                    <li><strong>手机上：</strong> 打开上面的链接 → 点击 <strong>"+" 图标</strong> → 选择您的照片</li>
+                    <li><strong>电脑上：</strong> 打开链接 → 点击 <strong>"添加照片"</strong> → 选择文件</li>
+                    <li><strong>没有 Google 账号？</strong> 上传照片需要 Google 账号，可以免费注册：<a href="https://accounts.google.com/signup" target="_blank" style="color:#7a5a44;">accounts.google.com</a></li>
+                </ul>
+
+                <div class="note">
+                    💡 <strong>提示：</strong> 所有上传到本相册的照片，所有拥有链接的客人都可以查看。请只分享合适的照片。谢谢！
+                </div>
+            </div>
+        </div>
+
+        <!-- GERMAN CONTENT (Deutsch) -->
+        <div id="lang-de" class="lang-content">
+            <div class="card">
+                <h2 style="color:#7a5a44; margin-bottom: 1rem;">📸 Teilen Sie Ihre Fotos</h2>
+                <p>Wir würden uns freuen, die Hochzeit durch Ihre Augen zu sehen! Bitte laden Sie Ihre Fotos und Videos in unser gemeinsames Album hoch.</p>
+                
+                <a href="#" class="gallery-link" id="google-photos-link-de" target="_blank">📤 Google Fotos Album öffnen</a>
+                
+                <div class="qr-code">
+                    <div class="qr-placeholder" id="qr-placeholder-de">
+                        QR-Code<br>↓
+                    </div>
+                    <p style="margin-top: 0.5rem; font-size: 0.8rem;">Mit dem Smartphone scannen</p>
+                </div>
+
+                <h3 style="color:#b28b66; margin: 1.5rem 0 0.5rem;">📱 So laden Sie hoch:</h3>
+                <ul class="instruction-list">
+                    <li><strong>Auf dem Handy:</strong> Öffnen Sie den Link oben → tippen Sie auf das <strong>"+" Symbol</strong> → wählen Sie Ihre Fotos aus</li>
+                    <li><strong>Auf dem Computer:</strong> Öffnen Sie den Link → klicken Sie auf <strong>"Fotos hinzufügen"</strong> → wählen Sie Dateien aus</li>
+                    <li><strong>Kein Google-Konto?</strong> Sie benötigen ein Google-Konto zum Hochladen. Kostenlos registrieren unter: <a href="https://accounts.google.com/signup" target="_blank" style="color:#7a5a44;">accounts.google.com</a></li>
+                </ul>
+
+                <div class="note">
+                    💡 <strong>Hinweis:</strong> Alle in dieses Album hochgeladenen Fotos sind für alle Gäste mit dem Link sichtbar. Bitte teilen Sie nur angemessene Fotos. Vielen Dank!
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Home Link -->
+        <div style="text-align: center; margin-top: 1rem;">
+            <a href="index.html" class="back-link">← Back to Wedding Website</a>
+        </div>
+
+        <div class="footer">
+            <p>Grischa & Jenny — September 28, 2026 — Liuyang, China</p>
+            <p>🎆 Thank you for sharing your memories! 🎆</p>
+        </div>
+    </div>
+
+    <script>
+        // Language switching functionality
+        const langButtons = document.querySelectorAll('.lang-btn');
+        const langContents = {
+            en: document.getElementById('lang-en'),
+            zh: document.getElementById('lang-zh'),
+            de: document.getElementById('lang-de')
+        };
+        
+        // Title and subtitle in each language
+        const titles = {
+            en: 'Wedding Gallery',
+            zh: '婚礼相册',
+            de: 'Hochzeitsgalerie'
+        };
+        
+        const subtitles = {
+            en: 'Share your memories with us',
+            zh: '与我们分享您的美好回忆',
+            de: 'Teilen Sie Ihre Erinnerungen mit uns'
+        };
+        
+        function switchLanguage(lang) {
+            // Hide all language contents
+            Object.values(langContents).forEach(content => {
+                if (content) content.classList.remove('active');
+            });
+            // Show selected language content
+            if (langContents[lang]) langContents[lang].classList.add('active');
+            
+            // Update title and subtitle
+            const titleElem = document.getElementById('gallery-title');
+            const subtitleElem = document.getElementById('gallery-subtitle');
+            if (titleElem) titleElem.textContent = titles[lang];
+            if (subtitleElem) subtitleElem.textContent = subtitles[lang];
+            
+            // Update active button style
+            langButtons.forEach(btn => {
+                if (btn.dataset.lang === lang) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+        }
+        
+        // Add click event to language buttons
+        langButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                switchLanguage(btn.dataset.lang);
+            });
+        });
+        
+        // Note: Replace the href attributes of the gallery links with your actual Google Photos album link
+        // You can do this by adding the link to all three language buttons' href
+        const YOUR_GOOGLE_PHOTOS_LINK = "https://photos.app.goo.gl/YOUR_ALBUM_ID";
+        
+        // Set the link for all language versions
+        const photoLinks = document.querySelectorAll('.gallery-link');
+        photoLinks.forEach(link => {
+            link.href = YOUR_GOOGLE_PHOTOS_LINK;
+        });
+        
+        // You can also generate QR codes dynamically using a service like:
+        // https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=YOUR_LINK
+        // For simplicity, we'll show placeholders that you can replace with actual QR code images
+        
+        // If you want to add actual QR codes, replace the placeholder divs with images:
+        /*
+        const qrPlaceholders = document.querySelectorAll('.qr-placeholder');
+        const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(YOUR_GOOGLE_PHOTOS_LINK)}`;
+        
+        qrPlaceholders.forEach(placeholder => {
+            const img = document.createElement('img');
+            img.src = qrCodeUrl;
+            img.style.width = '150px';
+            img.style.height = '150px';
+            img.alt = 'QR Code';
+            placeholder.parentNode.replaceChild(img, placeholder);
+        });
+        */
+    </script>
+</body>
+</html>
