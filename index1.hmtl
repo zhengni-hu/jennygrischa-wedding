@@ -4,151 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grischa & Jenny | Wedding</title>
-    <style>
-        /* Smooth scrolling for the whole page */
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        /* Navigation bar styling */
-        .nav-menu {
-            background: white;
-            border-radius: 50px;
-            padding: 12px 20px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            position: sticky;
-            top: 20px;
-            z-index: 100;
-        }
-        
-        .nav-menu h3 {
-            color: #7a5a44;
-            font-size: 16px;
-            margin-bottom: 12px;
-            text-align: center;
-        }
-        
-        .nav-links {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
-        
-        .nav-links a {
-            background: #faf7f2;
-            color: #7a5a44;
-            text-decoration: none;
-            padding: 6px 14px;
-            border-radius: 30px;
-            font-size: 13px;
-            transition: all 0.3s ease;
-            border: 1px solid #e8cdb5;
-        }
-        
-        .nav-links a:hover {
-            background: #7a5a44;
-            color: white;
-            border-color: #7a5a44;
-        }
-        
-        /* Big title styling */
-        .big-title {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        
-        .big-title h1 {
-            font-size: 42px;
-            color: #7a5a44;
-            margin-bottom: 5px;
-            letter-spacing: 2px;
-        }
-        
-        .big-title p {
-            font-size: 16px;
-            color: #b28b66;
-            font-style: italic;
-        }
-        
-        @media (max-width: 550px) {
-            .nav-links a {
-                padding: 4px 10px;
-                font-size: 11px;
-            }
-            .big-title h1 {
-                font-size: 32px;
-            }
-        }
-    </style>
 </head>
 <body style="font-family: Arial, sans-serif; background-color: #faf7f2; color: #333; margin: 0; padding: 0;">
     
     <div style="max-width: 600px; margin: 0 auto; padding: 40px 20px; text-align: center;">
+         
+        <!-- Names -->
+        <h1 style="color: #7a5a44; font-size: 48px; margin-bottom: 10px;">Grischa & Jenny</h1>
         
-        <!-- ===== BIG TITLE ===== -->
-        <div class="big-title">
-            <h1>💍 Grischa & Jenny's Wedding 💍</h1>
-            <p>September 28, 2026 | Liuyang, China</p>
-        </div>
+        <!-- Date -->
+        <h2 style="color: #b28b66; font-size: 24px; font-weight: normal; margin-bottom: 30px;">September 28, 2026</h2>
         
-        <!-- ===== NAVIGATION MENU (TABLE OF CONTENTS) ===== -->
-        <div class="nav-menu">
-            <h3>📋 Jump to Section / 快速导航</h3>
-            <div class="nav-links">
-                <a href="#invitation">💌 Invitation</a>
-                <a href="#location">📍 Location</a>
-                <a href="#countdown">⏰ Countdown</a>
-                <a href="#schedule">📅 Schedule</a>
-                <a href="#transport">🚗 Transport</a>
-                <a href="#feast">🍽️ Feast</a>
-                <a href="#rsvp">💌 RSVP</a>
-                <a href="#gallery">📸 Gallery</a>
-            </div>
-        </div>
+        <!-- Photo of you two (NOW UNDER NAMES + DATE) -->
+        <img src="us1.jpg" alt="Grischa & Jenny" style="width: 100%; max-width: 400px; border-radius: 20px; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
         
-        <!-- ===== INVITATION SECTION ===== -->
-        <div id="invitation">
-            <h1 style="color: #7a5a44; font-size: 48px; margin-bottom: 10px;">Grischa & Jenny</h1>
-            <h2 style="color: #b28b66; font-size: 24px; font-weight: normal; margin-bottom: 30px;">September 28, 2026</h2>
-            <img src="us1.jpg" alt="Grischa & Jenny" style="width: 100%; max-width: 400px; border-radius: 20px; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-            <hr style="width: 50px; border: 1px solid #e8cdb5; margin: 30px auto;">
-            <p style="font-size: 18px; line-height: 1.6; margin-bottom: 20px;">
-                Together with our families, we invite you to celebrate our wedding!
-            </p>
-            <p style="font-size: 16px; line-height: 1.6; color: #9b7659; font-style: italic;">
-                Gemeinsam mit unseren Familien laden wir Sie ein,<br>
-                unsere Hochzeit mit uns zu feiern!
-            </p>
-            <hr style="width: 50px; border: 1px solid #e8cdb5; margin: 40px auto;">
-        </div>
+        <!-- Divider -->
+        <hr style="width: 50px; border: 1px solid #e8cdb5; margin: 30px auto;">
         
-        <!-- Wedding Invitation Link Button -->
-        <div style="background: white; border-radius: 20px; padding: 25px; margin: 30px 0; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-            <h2 style="color: #7a5a44; font-size: 24px; margin-bottom: 15px;">💌 Wedding Invitation / 电子请柬</h2>
-            <p style="color: #9b7659; margin-bottom: 20px;">View our beautiful digital wedding invitation</p>
-            <div style="margin: 20px 0;">
-                <a href="https://e-invitation.hunliji.com/p/frontend/creation-platform/app-preview-wedding-card/dist/index.html?cardId=MTMyOTMzMzI1ZmlyZV9jbG91ZA" 
-                   target="_blank" 
-                   style="background: #7a5a44; color: white; padding: 14px 30px; border-radius: 50px; text-decoration: none; display: inline-block; font-weight: bold;">
-                    📖 打开电子请柬 / Open Invitation
-                </a>
-            </div>
-            <div style="text-align: center; margin: 20px 0;">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://e-invitation.hunliji.com/p/frontend/creation-platform/app-preview-wedding-card/dist/index.html?cardId=MTMyOTMzMzI1ZmlyZV9jbG91ZA" 
-                     alt="Invitation QR Code" 
-                     style="width: 110px; height: 110px; border-radius: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                <p style="font-size: 11px; color: #9b7659; margin-top: 5px;">📱 扫码打开请柬 / Scan to open</p>
-            </div>
-        </div>
+        <!-- English -->
+        <p style="font-size: 18px; line-height: 1.6; margin-bottom: 20px;">
+            Together with our families, we invite you to celebrate our wedding!
+        </p>
         
-        <!-- Section 1: Ceremony Location -->
-        <div id="location" style="background: white; border-radius: 20px; padding: 25px; margin: 30px 0; text-align: left; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+        <!-- German -->
+        <p style="font-size: 16px; line-height: 1.6; color: #9b7659; font-style: italic;">
+            Gemeinsam mit unseren Familien laden wir Sie ein,<br>
+            unsere Hochzeit mit uns zu feiern!
+        </p>
+        
+        <!-- Divider -->
+        <hr style="width: 50px; border: 1px solid #e8cdb5; margin: 40px auto;">
+        
+      <!-- Wedding Invitation Link Button -->
+<div style="background: white; border-radius: 20px; padding: 25px; margin: 30px 0; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+    <h2 style="color: #7a5a44; font-size: 24px; margin-bottom: 15px;">💌 Wedding Invitation / 电子请柬</h2>
+    <p style="color: #9b7659; margin-bottom: 20px;">View our beautiful digital wedding invitation</p>
+    
+    <div style="margin: 20px 0;">
+        <a href="https://e-invitation.hunliji.com/p/frontend/creation-platform/app-preview-wedding-card/dist/index.html?cardId=MTMyOTMzMzI1ZmlyZV9jbG91ZA" 
+           target="_blank" 
+           style="background: #7a5a44; color: white; padding: 14px 30px; border-radius: 50px; text-decoration: none; display: inline-block; font-weight: bold;">
+            📖 打开电子请柬 / Open Invitation
+        </a>
+    </div>
+    
+    <!-- Optional QR Code for mobile -->
+    <div style="text-align: center; margin: 20px 0;">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://e-invitation.hunliji.com/p/frontend/creation-platform/app-preview-wedding-card/dist/index.html?cardId=MTMyOTMzMzI1ZmlyZV9jbG91ZA" 
+             alt="Invitation QR Code" 
+             style="width: 110px; height: 110px; border-radius: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <p style="font-size: 11px; color: #9b7659; margin-top: 5px;">📱 扫码打开请柬 / Scan to open</p>
+    </div>
+</div>
+        
+
+                <!-- Section 1: Ceremony Location -->
+        <div style="background: white; border-radius: 20px; padding: 25px; margin: 30px 0; text-align: left; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
             <h2 style="color: #7a5a44; font-size: 24px; margin-bottom: 15px; text-align: center;">📍 Ceremony & Reception</h2>
-            <p style="font-size: 16px; margin-bottom: 10px;"><strong>Venue:</strong> 曼与蔓·自然美学庄园 (Man Yu Man: A Natural Aesthetic Estate)</p>
-            <p style="font-size: 16px; margin-bottom: 10px;"><strong>Address:</strong> 枨冲镇佳和村连家组34号</p>
-            <p style="font-size: 14px; color: #9b7659; margin-bottom: 15px;">~15 min drive from Liuyang city center</p>
+            
+            <p style="font-size: 16px; margin-bottom: 10px;"><strong>Venue:</strong> 曼与蔓·自然美学庄园 (Man Yu Man: A Natural Aesthetic Estate) </p>
+            <p style="font-size: 16px; margin-bottom: 10px;"><strong>Address:</strong> 枨冲镇佳和村连家组34号 (No. 34, Lianjia Group, Jiahe Village, Chengchong Town, Liuyang,
+                Hunan, China)</p>
+            
+        <p style="font-size: 14px; color: #9b7659; margin-bottom: 15px;">
+                ~15 min drive from Liuyang city center
+            </p>
+            
+            <!-- Navigation Button (Amap) -->
             <p style="text-align: center; margin: 20px 0;">
                 <a href="https://uri.amap.com/marker?position=113.347,28.083&name=曼与蔓自然美学庄园" 
                    target="_blank" 
@@ -156,123 +78,325 @@
                     📍 Open with Amap (高德地图导航)
                 </a>
             </p>
+            
+            <!-- Embedded Map Preview -->
             <div style="margin-top: 15px;">
-                <iframe src="https://uri.amap.com/marker?position=113.347,28.083&name=曼与蔓自然美学庄园&view=map" width="100%" height="250" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
-                <p style="font-size: 12px; color: #9b7659; text-align: center; margin-top: 8px;">A beautiful forest estate</p>
+                <iframe 
+                    src="https://uri.amap.com/marker?position=113.347,28.083&name=曼与蔓自然美学庄园&view=map" 
+                    width="100%" 
+                    height="250" 
+                    style="border:0; border-radius: 15px;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+                <p style="font-size: 12px; color: #9b7659; text-align: center; margin-top: 8px;">
+                    A beautiful forest estate 
+                </p>
+                
             </div>
+             <!-- Embedded Google Maps View -->
             <div style="margin-top: 15px;">
-                <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=浏阳市枨冲镇佳和村聚宝园林" width="100%" height="300" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe 
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=浏阳市枨冲镇佳和村聚宝园林"
+                    width="100%" 
+                    height="300" 
+                    style="border:0; border-radius: 15px;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            
             </div>
         </div>
-        
-        <!-- Countdown Timer & Highlighted Date -->
-        <div id="countdown" style="background: linear-gradient(135deg, #7a5a44 0%, #b28b66 100%); border-radius: 25px; padding: 30px 20px; margin: 30px 0; text-align: center; box-shadow: 0 8px 20px rgba(0,0,0,0.15);">
+
+                <!-- Countdown Timer & Highlighted Date -->
+        <div style="background: linear-gradient(135deg, #7a5a44 0%, #b28b66 100%); border-radius: 25px; padding: 30px 20px; margin: 30px 0; text-align: center; box-shadow: 0 8px 20px rgba(0,0,0,0.15);">
+            
+            <!-- Highlighted Date -->
             <div style="background: white; border-radius: 20px; padding: 15px; display: inline-block; margin-bottom: 20px;">
                 <p style="font-size: 14px; color: #b28b66; margin: 0; letter-spacing: 2px;">SAVE THE DATE</p>
                 <p style="font-size: 28px; color: #7a5a44; margin: 5px 0; font-weight: bold;">September 28, 2026</p>
                 <p style="font-size: 12px; color: #9b7659; margin: 0;">Monday | 星期一</p>
             </div>
+            
+            <!-- Countdown Timer Display -->
             <div style="color: white;">
                 <p style="font-size: 18px; margin-bottom: 15px; opacity: 0.9;">Counting down to our special day</p>
+                
                 <div id="countdown" style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-                    <div style="background: rgba(255,255,255,0.2); border-radius: 15px; padding: 12px; min-width: 70px;"><span id="days" style="font-size: 36px; font-weight: bold; display: block;">00</span><span style="font-size: 12px;">Days</span></div>
-                    <div style="background: rgba(255,255,255,0.2); border-radius: 15px; padding: 12px; min-width: 70px;"><span id="hours" style="font-size: 36px; font-weight: bold; display: block;">00</span><span style="font-size: 12px;">Hours</span></div>
-                    <div style="background: rgba(255,255,255,0.2); border-radius: 15px; padding: 12px; min-width: 70px;"><span id="minutes" style="font-size: 36px; font-weight: bold; display: block;">00</span><span style="font-size: 12px;">Minutes</span></div>
-                    <div style="background: rgba(255,255,255,0.2); border-radius: 15px; padding: 12px; min-width: 70px;"><span id="seconds" style="font-size: 36px; font-weight: bold; display: block;">00</span><span style="font-size: 12px;">Seconds</span></div>
+                    <div style="background: rgba(255,255,255,0.2); border-radius: 15px; padding: 12px; min-width: 70px;">
+                        <span id="days" style="font-size: 36px; font-weight: bold; display: block;">00</span>
+                        <span style="font-size: 12px;">Days</span>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.2); border-radius: 15px; padding: 12px; min-width: 70px;">
+                        <span id="hours" style="font-size: 36px; font-weight: bold; display: block;">00</span>
+                        <span style="font-size: 12px;">Hours</span>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.2); border-radius: 15px; padding: 12px; min-width: 70px;">
+                        <span id="minutes" style="font-size: 36px; font-weight: bold; display: block;">00</span>
+                        <span style="font-size: 12px;">Minutes</span>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.2); border-radius: 15px; padding: 12px; min-width: 70px;">
+                        <span id="seconds" style="font-size: 36px; font-weight: bold; display: block;">00</span>
+                        <span style="font-size: 12px;">Seconds</span>
+                    </div>
                 </div>
             </div>
-            <div style="margin-top: 20px;"><span style="color: white; font-size: 20px;">✨</span></div>
+            
+            <!-- Decorative line -->
+            <div style="margin-top: 20px;">
+                <span style="color: white; font-size: 20px;">✨</span>
+            </div>
         </div>
         
+        <!-- JavaScript for Countdown Timer -->
         <script>
+            // Set the wedding date and time (September 28, 2026 at 10:00 AM)
             const weddingDate = new Date("September 28, 2026 10:00:00").getTime();
+            
             function updateCountdown() {
                 const now = new Date().getTime();
                 const distance = weddingDate - now;
+                
                 if (distance < 0) {
-                    document.getElementById("countdown").innerHTML = `<div style="background: rgba(255,255,255,0.2); border-radius: 15px; padding: 20px; text-align: center;"><span style="font-size: 28px; font-weight: bold;">🎉 TODAY IS THE DAY! 🎉</span></div>`;
+                    // Wedding day has arrived!
+                    document.getElementById("countdown").innerHTML = `
+                        <div style="background: rgba(255,255,255,0.2); border-radius: 15px; padding: 20px; text-align: center;">
+                            <span style="font-size: 28px; font-weight: bold;">🎉 TODAY IS THE DAY! 🎉</span>
+                        </div>
+                    `;
                     return;
                 }
+                
+                // Calculate days, hours, minutes, seconds
                 const days = Math.floor(distance / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                // Display the results
                 document.getElementById("days").innerHTML = days;
                 document.getElementById("hours").innerHTML = hours;
                 document.getElementById("minutes").innerHTML = minutes;
                 document.getElementById("seconds").innerHTML = seconds;
             }
+            
+            // Update the countdown every second
             updateCountdown();
             setInterval(updateCountdown, 1000);
         </script>
+
         
-        <!-- Section 2: Wedding Day Schedule -->
-        <div id="schedule" style="background: white; border-radius: 20px; padding: 25px; margin: 30px 0; text-align: left; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-            <h2 style="color: #7a5a44; font-size: 24px; margin-bottom: 15px; text-align: center;">Wedding Day Schedule</h2>
-            <div style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;"><span style="width: 80px; font-weight: bold; color: #b28b66;">10:00</span><span><strong>宾客签到 / Guest Check-in</strong></span></div>
-            <div style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;"><span style="width: 80px; font-weight: bold; color: #b28b66;">10:30</span><span><strong>来宾入座和自由交流/ Guests Seated & Social Time</strong></span></div>
-            <div style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;"><span style="width: 80px; font-weight: bold; color: #b28b66;">10:40</span><span><strong>互动游戏 / Wedding Games</strong></span></div>
-            <div style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;"><span style="width: 80px; font-weight: bold; color: #b28b66;">11:00</span><span><strong>婚礼仪式开始 / Ceremony Begins</strong></span></div>
-            <div style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;"><span style="width: 80px; font-weight: bold; color: #b28b66;">11:05</span><span><strong>新人入场 / Couple Entrance</strong></span></div>
-            <div style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;"><span style="width: 80px; font-weight: bold; color: #b28b66;">11:10</span><span><strong>婚礼宣誓 / Wedding Vows</strong></span></div>
-            <div style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;"><span style="width: 80px; font-weight: bold; color: #b28b66;">11:20</span><span><strong>交换戒指 / Ring Exchange</strong></span></div>
-            <div style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;"><span style="width: 80px; font-weight: bold; color: #b28b66;">11:25</span><span><strong>给父母敬茶 / Tea Ceremony</strong></span></div>
-            <div style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;"><span style="width: 80px; font-weight: bold; color: #b28b66;">11:30</span><span><strong>抽奖 / Lucky Draw</strong></span></div>
-            <div style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;"><span style="width: 80px; font-weight: bold; color: #b28b66;">11:40</span><span><strong>切蛋糕 / Cake Cutting</strong></span></div>
-            <div style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;"><span style="width: 80px; font-weight: bold; color: #b28b66;">11:50</span><span><strong>集体合影 / Group Photo</strong></span></div>
-            <div style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;"><span style="width: 80px; font-weight: bold; color: #b28b66;">12:00</span><span><strong>午宴开始 / Lunch Banquet</strong></span></div>
-            <div style="display: flex; padding: 10px 0;"><span style="width: 80px; font-weight: bold; color: #b28b66;">13:00</span><span><strong>自由交流 / Free Social Time</strong></span></div>
-            <div style="background: #faf7f2; border-radius: 15px; padding: 12px; margin-top: 20px; text-align: center;"><p style="font-size: 13px; color: #7a5a44; margin: 0;">🎊 Please arrive by <strong>11:00 AM</strong> to check in and get settled! 🎊</p></div>
+
+
+            <!-- Section 2: Wedding Day Schedule -->
+        <div style="background: white; border-radius: 20px; padding: 25px; margin: 30px 0; text-align: left; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+            <h2 style="color: #7a5a44; font-size: 24px; margin-bottom: 15px; text-align: center;"> Wedding Day Schedule</h2>
+            
+            <div class="schedule-item" style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;">
+                <span style="width: 80px; font-weight: bold; color: #b28b66;">10:00</span>
+                <span><strong>宾客签到 / Guest Check-in</strong></span>
+            </div>
+            
+            <div class="schedule-item" style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;">
+                <span style="width: 80px; font-weight: bold; color: #b28b66;">10:30</span>
+                <span><strong>来宾入座和自由交流/ Guests Seated & Social Time</strong></span>
+            </div>
+            
+            <div class="schedule-item" style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;">
+                <span style="width: 80px; font-weight: bold; color: #b28b66;">10:40</span>
+                <span><strong>互动游戏 / Wedding Games</strong></span>
+            </div>
+            
+            <div class="schedule-item" style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;">
+                <span style="width: 80px; font-weight: bold; color: #b28b66;">11:00</span>
+                <span><strong>婚礼仪式开始 / Ceremony Begins</strong></span>
+            </div>
+            
+            <div class="schedule-item" style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;">
+                <span style="width: 80px; font-weight: bold; color: #b28b66;">11:05</span>
+                <span><strong>新人入场 / Couple Entrance</strong></span>
+            </div>
+            
+            <div class="schedule-item" style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;">
+                <span style="width: 80px; font-weight: bold; color: #b28b66;">11:10</span>
+                <span><strong>婚礼宣誓 / Wedding Vows</strong></span>
+            </div>
+            
+            <div class="schedule-item" style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;">
+                <span style="width: 80px; font-weight: bold; color: #b28b66;">11:20</span>
+                <span><strong>交换戒指 / Ring Exchange</strong></span>
+            </div>
+            
+            <div class="schedule-item" style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;">
+                <span style="width: 80px; font-weight: bold; color: #b28b66;">11:25</span>
+                <span><strong>给父母敬茶 / Tea Ceremony</strong></span>
+            </div>
+            
+            <div class="schedule-item" style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;">
+                <span style="width: 80px; font-weight: bold; color: #b28b66;">11:30</span>
+                <span><strong>抽奖 / Lucky Draw</strong></span>
+            </div>
+            
+            <div class="schedule-item" style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;">
+                <span style="width: 80px; font-weight: bold; color: #b28b66;">11:40</span>
+                <span><strong>切蛋糕 / Cake Cutting</strong></span>
+            </div>
+            
+            <div class="schedule-item" style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;">
+                <span style="width: 80px; font-weight: bold; color: #b28b66;">11:50</span>
+                <span><strong>集体合影 / Group Photo</strong></span>
+            </div>
+            
+            <div class="schedule-item" style="display: flex; padding: 10px 0; border-bottom: 1px solid #f0e2d6;">
+                <span style="width: 80px; font-weight: bold; color: #b28b66;">12:00</span>
+                <span><strong>午宴开始 / Lunch Banquet</strong></span>
+            </div>
+            
+            <div class="schedule-item" style="display: flex; padding: 10px 0;">
+                <span style="width: 80px; font-weight: bold; color: #b28b66;">13:00</span>
+                <span><strong>自由交流 / Free Social Time</strong></span>
+            </div>
+            
+            <div style="background: #faf7f2; border-radius: 15px; padding: 12px; margin-top: 20px; text-align: center;">
+                <p style="font-size: 13px; color: #7a5a44; margin: 0;">
+                    🎊 Please arrive by <strong>11:00 AM</strong> to check in and get settled! 🎊
+                </p>
+            </div>
         </div>
-        
-        <!-- Section 3: Transportation -->
-        <div id="transport" style="background: white; border-radius: 20px; padding: 25px; margin: 30px 0; text-align: left; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+    
+        <!-- Section 3: Transportation with Registration Box -->
+        <div style="background: white; border-radius: 20px; padding: 25px; margin: 30px 0; text-align: left; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
             <h2 style="color: #7a5a44; font-size: 24px; margin-bottom: 15px; text-align: center;">Transportation</h2>
+            
+            <!-- Taxi -->
             <div style="margin-bottom: 20px;">
                 <h3 style="color: #b28b66; font-size: 18px; margin-bottom: 8px;">🚕 Taxi</h3>
                 <p style="font-size: 15px;">Easy to get there by taxi — only about <strong>15 minutes</strong> from Liuyang city center.</p>
-                <p style="font-size: 14px; color: #9b7659;">Show driver: <strong>"浏阳市枨冲镇佳和村连家组-曼与蔓庄园"</strong></p>
+                <p style="font-size: 14px; color: #9b7659;">Show driver: <strong>"浏阳市枨冲镇佳和村连家组-曼与蔓庄园 （Jiahe Chun Lianjia Zu-Man Yu Man Zhuangyuan）"</strong></p>
             </div>
+            <!-- Shuttle Registration Box with QR Code -->
             <div style="background: #faf7f2; border-radius: 15px; padding: 20px; margin: 20px 0; border: 2px solid #e8cdb5;">
                 <h3 style="color: #7a5a44; font-size: 20px; margin-bottom: 10px; text-align: center;">🚐 Shuttle Registration</h3>
-                <p style="font-size: 14px; text-align: center; margin-bottom: 20px;">We will arrange cars from the city center. <strong>Please register by clicking the link.</strong></p>
+                <p style="font-size: 14px; text-align: center; margin-bottom: 20px;">
+                    We will arrange cars from the city center to take guests to the ceremony and back.
+                    <strong>Please register by clicking the link.</strong>
+                </p>
                 <div style="text-align: center; margin: 20px 0;">
-                    <a href="https://v.wjx.cn/vm/h6Lh58L.aspx#" target="_blank" style="background: #7a5a44; color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; display: inline-block; font-weight: bold;">📋 Register for Shuttle (预约婚车)</a>
+    <a href="https://v.wjx.cn/vm/h6Lh58L.aspx#" 
+       target="_blank" 
+       style="background: #7a5a44; color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; display: inline-block; font-weight: bold;">
+        📋 Register for Shuttle (预约婚车)
+    </a>
+</div>
+ <div style="margin-top: 15px; background: white; border-radius: 10px; padding: 12px;">
+                    <p style="font-size: 13px; color: #9b7659;">
+                        ⏰ We will confirm the departure time one day ahead via message.
+                    </p>
                 </div>
-                <div style="margin-top: 15px; background: white; border-radius: 10px; padding: 12px;"><p style="font-size: 13px; color: #9b7659;">⏰ We will confirm the departure time one day ahead via message.</p></div>
             </div>
-            <div style="background: #e8f0ee; border-radius: 15px; padding: 12px; margin-top: 20px; text-align: center;"><p style="font-size: 14px; color: #5c7a6e; margin: 0;">💡 <strong>Recommendation:</strong> Register at least one day early to secure your spot on the shuttle!</p></div>
-        </div>
+                
+               
+                
+               
+            <!-- Recommendation Box -->
+            <div style="background: #e8f0ee; border-radius: 15px; padding: 12px; margin-top: 20px; text-align: center;">
+                <p style="font-size: 14px; color: #5c7a6e; margin: 0;">
+                    💡 <strong>Recommendation:</strong> Register at least one day early to secure your spot on the shuttle!
+                </p>
+            </div>
         
-        <!-- Section 4: Feast Details -->
-        <div id="feast" style="background: white; border-radius: 20px; padding: 25px; margin: 30px 0; text-align: left; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-            <h2 style="color: #7a5a44; font-size: 24px; margin-bottom: 15px; text-align: center;">Feast & Cuisine</h2>
-            <div style="margin-bottom: 20px; text-align: center;"><p style="font-size: 16px; line-height: 1.6; color: #5c4230;">We will be serving a delicious <strong>Liuyang-style banquet</strong> featuring local specialties from the beautiful <strong>曼与蔓·自然美学庄园</strong>.</p></div>
-            <div style="text-align: center; margin: 25px 0;">
-                <a href="https://v.wjx.cn/vm/ey3JxAK.aspx#" target="_blank" style="background: #7a5a44; color: white; padding: 14px 30px; border-radius: 50px; text-decoration: none; display: inline-block; font-size: 16px; font-weight: bold;">📄 View Full Menu (详细菜单)</a>
-                <p style="font-size: 12px; color: #9b7659; margin-top: 8px;">Click to see complete dish details and descriptions</p>
+
+                <!-- Section 4: Feast Details -->
+        <div style="background: white; border-radius: 20px; padding: 25px; margin: 30px 0; text-align: left; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+            <h2 style="color: #7a5a44; font-size: 24px; margin-bottom: 15px; text-align: center;"> Feast & Cuisine</h2>
+            
+            <!-- Cuisine Introduction -->
+            <div style="margin-bottom: 20px; text-align: center;">
+                <p style="font-size: 16px; line-height: 1.6; color: #5c4230;">
+                    We will be serving a delicious <strong>Liuyang-style banquet</strong> featuring local specialties from the 
+                    beautiful <strong>曼与蔓·自然美学庄园</strong>.
+                </p>
             </div>
-            <div style="background: #faf7f2; border-radius: 15px; padding: 15px; margin: 15px 0;"><h3 style="color: #7a5a44; font-size: 16px; margin-bottom: 10px;">🌱 Dietary Options</h3><p style="font-size: 14px; line-height: 1.5;">Vegetarian, vegan, and allergy-friendly options are available.</p><p style="font-size: 14px; color: #9b7659; margin-top: 8px;">📋 Please indicate any dietary needs when you RSVP.</p></div>
+            
+           <!-- BUTTON TO VIEW FULL MENU DOCUMENT -->
             <div style="text-align: center; margin: 25px 0;">
-                <a href="https://v.wjx.cn/vm/Y1xLgET.aspx#" target="_blank" style="background: #7a5a44; color: white; padding: 14px 30px; border-radius: 50px; text-decoration: none; display: inline-block; font-size: 16px; font-weight: bold;">🍷 View Drinks</a>
-                <p style="font-size: 12px; color: #9b7659; margin-top: 8px;">Click to see complete drinks details and descriptions</p>
+                <a href="https://v.wjx.cn/vm/ey3JxAK.aspx#" 
+                   target="_blank" 
+                   style="background: #7a5a44; color: white; padding: 14px 30px; border-radius: 50px; text-decoration: none; display: inline-block; font-size: 16px; font-weight: bold; box-shadow: 0 3px 8px rgba(0,0,0,0.1);">
+                    📄 View Full Menu (详细菜单)
+                </a>
+                <p style="font-size: 12px; color: #9b7659; margin-top: 8px;">
+                    Click to see complete dish details and descriptions
+                </p>
             </div>
-            <div style="background: #fff8f0; border-radius: 15px; padding: 12px; margin-top: 20px; text-align: center; border-left: 4px solid #e8cdb5;"><p style="font-size: 13px; color: #7a5a44; margin: 0;">🍜 <strong>Note:</strong> Man Yu Man is famous for its forest restaurant. All dishes are prepared with fresh, local ingredients!</p></div>
+            
+            <!-- Dietary Options -->
+            <div style="background: #faf7f2; border-radius: 15px; padding: 15px; margin: 15px 0;">
+                <h3 style="color: #7a5a44; font-size: 16px; margin-bottom: 10px;">🌱 Dietary Options</h3>
+                <p style="font-size: 14px; line-height: 1.5;">
+                    Vegetarian, vegan, and allergy-friendly options are available.
+                </p>
+                <p style="font-size: 14px; color: #9b7659; margin-top: 8px;">
+                    📋 Please indicate any dietary needs when you RSVP.
+                </p>
+            </div>
+            
+            <!-- Drinks -->
+             <div style="text-align: center; margin: 25px 0;">
+                <a href="https://v.wjx.cn/vm/Y1xLgET.aspx#" 
+                   target="_blank" 
+                   style="background: #7a5a44; color: white; padding: 14px 30px; border-radius: 50px; text-decoration: none; display: inline-block; font-size: 16px; font-weight: bold; box-shadow: 0 3px 8px rgba(0,0,0,0.1);">
+                    🍷 View Drinks
+                </a>
+                <p style="font-size: 12px; color: #9b7659; margin-top: 8px;">
+                    Click to see complete drinks details and descriptions
+                </p>
+            </div>
+            
+            
+            <!-- Note Box -->
+            <div style="background: #fff8f0; border-radius: 15px; padding: 12px; margin-top: 20px; text-align: center; border-left: 4px solid #e8cdb5;">
+                <p style="font-size: 13px; color: #7a5a44; margin: 0;">
+                    🍜 <strong>Note:</strong> Man Yu Man is famous for its forest restaurant. 
+                    All dishes are prepared with fresh, local ingredients!
+                </p>
+            </div>
         </div>
-        
-        <!-- Section 6: RSVP -->
-        <div id="rsvp" style="background: white; border-radius: 20px; padding: 25px; margin: 30px 0; text-align: left; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-            <h2 style="color: #7a5a44; font-size: 24px; margin-bottom: 15px; text-align: center;">RSVP / 请回复</h2>
-            <p style="text-align: center; color: #9b7659; margin-bottom: 20px;">Please let us know if you can join us by <strong>August 15, 2026</strong>.</p>
+
+
+
+                    <!-- Section 6: RSVP -->
+        <div style="background: white; border-radius: 20px; padding: 25px; margin: 30px 0; text-align: left; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+            <h2 style="color: #7a5a44; font-size: 24px; margin-bottom: 15px; text-align: center;"> RSVP / 请回复</h2>
+            <p style="text-align: center; color: #9b7659; margin-bottom: 20px;">
+                Please let us know if you can join us by <strong>August 15, 2026</strong>.
+            </p>
+            
+            <!-- RSVP Button with Link -->
             <div style="text-align: center; margin: 20px 0;">
-                <a href="https://v.wjx.cn/vm/PsY1AX1.aspx#" target="_blank" style="background: #7a5a44; color: white; padding: 14px 35px; border-radius: 50px; text-decoration: none; display: inline-block; font-size: 16px; font-weight: bold;">📋 RSVP Online (在线回复)</a>
-                <p style="font-size: 12px; color: #9b7659; margin-top: 8px;">Click the button above to fill out the RSVP form</p>
+                <a href="https://v.wjx.cn/vm/PsY1AX1.aspx#" 
+                   target="_blank" 
+                   style="background: #7a5a44; color: white; padding: 14px 35px; border-radius: 50px; text-decoration: none; display: inline-block; font-size: 16px; font-weight: bold; box-shadow: 0 3px 8px rgba(0,0,0,0.1);">
+                    📋 RSVP Online (在线回复)
+                </a>
+                <p style="font-size: 12px; color: #9b7659; margin-top: 8px;">
+                    Click the button above to fill out the RSVP form
+                </p>
             </div>
-            <div style="text-align: center; margin: 20px 0;">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://v.wjx.cn/vm/PsY1AX1.aspx%23" alt="RSVP QR Code" style="width: 150px; height: 150px; border-radius: 15px; box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
-                <p style="font-size: 12px; color: #9b7659; margin-top: 8px;">📱 微信扫码填写 / Scan with WeChat</p>
+            
+          <!-- 二维码（手机扫码直接填写） -->
+          <div style="text-align: center; margin: 20px 0;">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://v.wjx.cn/vm/PsY1AX1.aspx%23" 
+                     alt="RSVP QR Code"
+                     style="width: 150px; height: 150px; border-radius: 15px; box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
+                <p style="font-size: 12px; color: #9b7659; margin-top: 8px;">
+                    📱 微信扫码填写 / Scan with WeChat
+                </p>
             </div>
-            <div style="background: #faf7f2; border-radius: 15px; padding: 15px; margin: 15px 0;"><p style="font-weight: bold; color: #7a5a44; margin-bottom: 10px;">📝 The RSVP form will ask for:</p>
+            
+            <!-- What the RSVP form asks for -->
+            <div style="background: #faf7f2; border-radius: 15px; padding: 15px; margin: 15px 0;">
+                <p style="font-weight: bold; color: #7a5a44; margin-bottom: 10px;">📝 The RSVP form will ask for:</p>
                 <ul style="font-size: 14px; color: #5c4230; margin-left: 20px; line-height: 1.6;">
                     <li>Your name(s) / 您的姓名</li>
                     <li>Number of guests attending / 参加人数</li>
@@ -281,23 +405,46 @@
                     <li>Song requests for the party / 想听的歌曲</li>
                 </ul>
             </div>
+            
+            <!-- Contact option -->
             <div style="background: #fff8f0; border-radius: 15px; padding: 12px; margin-top: 15px; text-align: center; border-left: 4px solid #e8cdb5;">
-                <p style="font-size: 13px; color: #7a5a44; margin: 0;">📞 <strong>Having trouble with the form?</strong> Contact us directly:<br>Bride: 2974429801@qq.com | Groom: grischa.timochov64@googlemail.com</p>
+                <p style="font-size: 13px; color: #7a5a44; margin: 0;">
+                    📞 <strong>Having trouble with the form?</strong> Contact us directly:<br>
+                    Bride: [2974429801@qq.com] | Groom: [grischa.timochov64@googlemail.com]
+                </p>
             </div>
         </div>
-        
-        <!-- Section 7: Gallery (OneDrive) -->
-        <div id="gallery" style="background: white; border-radius: 20px; padding: 25px; margin: 30px 0; text-align: left; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                         <!-- Section 7: Gallery (OneDrive) -->
+        <div style="background: white; border-radius: 20px; padding: 25px; margin: 30px 0; text-align: left; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
             <h2 style="color: #7a5a44; font-size: 24px; margin-bottom: 15px; text-align: center;">Wedding Gallery / 婚礼相册</h2>
-            <p style="text-align: center; color: #9b7659; margin-bottom: 20px;">Share your memories and view everyone's photos!</p>
+            <p style="text-align: center; color: #9b7659; margin-bottom: 20px;">
+                Share your memories and view everyone's photos!
+            </p>
+            
+            <!-- OneDrive Gallery Button -->
             <div style="text-align: center; margin: 20px 0;">
-                <a href="https://1drv.ms/f/c/237b153eb4bbc5ff/IgCXqIMYJAGjRahBM19q-7bHAXN8P9BD0uvDUZRdmWPmKjs?e=EOa1Nk" target="_blank" style="background: #7a5a44; color: white; padding: 14px 30px; border-radius: 50px; text-decoration: none; display: inline-block; font-size: 16px; font-weight: bold;">📸 View & Share Photos (查看和分享照片)</a>
-                <p style="font-size: 12px; color: #9b7659; margin-top: 8px;">Click to open our shared OneDrive album</p>
+                <a href="https://1drv.ms/f/c/237b153eb4bbc5ff/IgCXqIMYJAGjRahBM19q-7bHAXN8P9BD0uvDUZRdmWPmKjs?e=EOa1Nk" 
+                   target="_blank" 
+                   style="background: #7a5a44; color: white; padding: 14px 30px; border-radius: 50px; text-decoration: none; display: inline-block; font-size: 16px; font-weight: bold; box-shadow: 0 3px 8px rgba(0,0,0,0.1);">
+                    📸 View & Share Photos (查看和分享照片)
+                </a>
+                <p style="font-size: 12px; color: #9b7659; margin-top: 8px;">
+                    Click to open our shared OneDrive album
+                </p>
             </div>
-            <div style="text-align: center; margin: 20px 0;">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://1drv.ms/f/c/237b153eb4bbc5ff/IgCXqIMYJAGjRahBM19q-7bHAXN8P9BD0uvDUZRdmWPmKjs?e=jDGFje" alt="Wedding Gallery QR Code" style="width: 150px; height: 150px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-                <p style="font-size: 12px; color: #9b7659; margin-top: 8px;">📱 扫码查看和分享婚礼照片 / Scan to view & share wedding photos</p>
-            </div>
+           <!-- Centered QR Code for OneDrive Gallery (Your New Link) -->
+<div style="text-align: center; margin: 20px 0;">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://1drv.ms/f/c/237b153eb4bbc5ff/IgCXqIMYJAGjRahBM19q-7bHAXN8P9BD0uvDUZRdmWPmKjs?e=jDGFje" 
+         alt="Wedding Gallery QR Code"
+         style="width: 150px; height: 150px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <p style="font-size: 12px; color: #9b7659; margin-top: 8px;">
+        📱 扫码查看和分享婚礼照片 / Scan to view & share wedding photos
+    </p>
+</div>
+            
+
+            
+            <!-- How to upload photos (OneDrive specific) -->
             <div style="background: #faf7f2; border-radius: 15px; padding: 15px; margin: 15px 0;">
                 <p style="font-weight: bold; color: #7a5a44; margin-bottom: 10px;">📷 How to share your photos / 如何分享照片：</p>
                 <ul style="font-size: 14px; color: #5c4230; margin-left: 20px; line-height: 1.6;">
@@ -306,19 +453,37 @@
                     <li><strong>No account needed to view</strong> – but a free Microsoft account is required to upload photos.</li>
                 </ul>
             </div>
+            
+            <!-- Important note -->
             <div style="background: #fff8f0; border-radius: 15px; padding: 12px; margin-top: 15px; text-align: center; border-left: 4px solid #e8cdb5;">
-                <p style="font-size: 13px; color: #7a5a44; margin: 0;">💡 <strong>Note / 提示:</strong> You need a free Microsoft account to upload photos. Anyone can view without an account.<br><span style="font-size: 12px;">需要免费的Microsoft账号才能上传照片。所有人都可以查看。</span></p>
+                <p style="font-size: 13px; color: #7a5a44; margin: 0;">
+                    💡 <strong>Note / 提示:</strong> You need a free Microsoft account to upload photos. 
+                    Anyone can view without an account.<br>
+                    <span style="font-size: 12px;">需要免费的Microsoft账号才能上传照片。所有人都可以查看。</span>
+                </p>
             </div>
+            
+            <!-- Alternative contact for upload help -->
             <div style="background: #e8f0ee; border-radius: 15px; padding: 12px; margin-top: 15px; text-align: center;">
-                <p style="font-size: 13px; color: #5c7a6e; margin: 0;">📧 <strong>Can't upload?</strong> Send your photos to us directly, and we'll add them to the album!<br><span style="font-size: 12px;">无法上传？请将照片直接发给我们，我们会帮您添加到相册！</span></p>
+                <p style="font-size: 13px; color: #5c7a6e; margin: 0;">
+                    📧 <strong>Can't upload?</strong> Send your photos to us directly, and we'll add them to the album!<br>
+                    <span style="font-size: 12px;">无法上传？请将照片直接发给我们，我们会帮您添加到相册！</span>
+                </p>
             </div>
         </div>
-        
-        <!-- Link -->
-        <p><a href="#" style="color: #7a5a44; text-decoration: none; border-bottom: 1px solid #e8cdb5;">More details coming soon</a></p>
+            
+          <!-- Link -->
+        <p>
+            <a href="#" style="color: #7a5a44; text-decoration: none; border-bottom: 1px solid #e8cdb5;">
+                More details coming soon
+            </a>
+        </p>
+
         
         <!-- Footer -->
-        <p style="font-size: 12px; color: #bb9b82; margin-top: 50px;">Liuyang, China</p>
+        <p style="font-size: 12px; color: #bb9b82; margin-top: 50px;">
+            Liuyang, China
+        </p>
         
     </div>
     
