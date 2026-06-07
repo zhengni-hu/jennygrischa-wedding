@@ -86,7 +86,83 @@
             
             </div>
         </div>
+
+                <!-- Countdown Timer & Highlighted Date -->
+        <div style="background: linear-gradient(135deg, #7a5a44 0%, #b28b66 100%); border-radius: 25px; padding: 30px 20px; margin: 30px 0; text-align: center; box-shadow: 0 8px 20px rgba(0,0,0,0.15);">
+            
+            <!-- Highlighted Date -->
+            <div style="background: white; border-radius: 20px; padding: 15px; display: inline-block; margin-bottom: 20px;">
+                <p style="font-size: 14px; color: #b28b66; margin: 0; letter-spacing: 2px;">SAVE THE DATE</p>
+                <p style="font-size: 28px; color: #7a5a44; margin: 5px 0; font-weight: bold;">September 28, 2026</p>
+                <p style="font-size: 12px; color: #9b7659; margin: 0;">Saturday | 星期六</p>
+            </div>
+            
+            <!-- Countdown Timer Display -->
+            <div style="color: white;">
+                <p style="font-size: 18px; margin-bottom: 15px; opacity: 0.9;">❤️ Counting down to our special day ❤️</p>
+                
+                <div id="countdown" style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                    <div style="background: rgba(255,255,255,0.2); border-radius: 15px; padding: 12px; min-width: 70px;">
+                        <span id="days" style="font-size: 36px; font-weight: bold; display: block;">00</span>
+                        <span style="font-size: 12px;">Days</span>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.2); border-radius: 15px; padding: 12px; min-width: 70px;">
+                        <span id="hours" style="font-size: 36px; font-weight: bold; display: block;">00</span>
+                        <span style="font-size: 12px;">Hours</span>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.2); border-radius: 15px; padding: 12px; min-width: 70px;">
+                        <span id="minutes" style="font-size: 36px; font-weight: bold; display: block;">00</span>
+                        <span style="font-size: 12px;">Minutes</span>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.2); border-radius: 15px; padding: 12px; min-width: 70px;">
+                        <span id="seconds" style="font-size: 36px; font-weight: bold; display: block;">00</span>
+                        <span style="font-size: 12px;">Seconds</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Decorative line -->
+            <div style="margin-top: 20px;">
+                <span style="color: white; font-size: 20px;">🎊 ✨ 💍 ✨ 🎊</span>
+            </div>
+        </div>
         
+        <!-- JavaScript for Countdown Timer -->
+        <script>
+            // Set the wedding date and time (September 28, 2026 at 10:00 AM)
+            const weddingDate = new Date("September 28, 2026 10:00:00").getTime();
+            
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const distance = weddingDate - now;
+                
+                if (distance < 0) {
+                    // Wedding day has arrived!
+                    document.getElementById("countdown").innerHTML = `
+                        <div style="background: rgba(255,255,255,0.2); border-radius: 15px; padding: 20px; text-align: center;">
+                            <span style="font-size: 28px; font-weight: bold;">🎉 TODAY IS THE DAY! 🎉</span>
+                        </div>
+                    `;
+                    return;
+                }
+                
+                // Calculate days, hours, minutes, seconds
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                // Display the results
+                document.getElementById("days").innerHTML = days;
+                document.getElementById("hours").innerHTML = hours;
+                document.getElementById("minutes").innerHTML = minutes;
+                document.getElementById("seconds").innerHTML = seconds;
+            }
+            
+            // Update the countdown every second
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        </script>
 
         
 
