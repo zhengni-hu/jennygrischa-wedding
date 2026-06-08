@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>回门喜宴邀请函 - 胡峥妮 & 李瑞贤</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #8B0000; /* 深红底色 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Georgia', 'Times New Roman', '宋体', 'SimHei', serif;
+            padding: 20px;
+        }
+
+        /* 主卡片：传统中式红金风格 */
+        .invitation-card {
+            max-width: 550px;
+            width: 100%;
+            background: #D32F2F;  /* 喜庆正红 */
+            background-image: radial-gradient(circle at 10% 20%, rgba(255,215,0,0.08) 2%, transparent 2.5%),
+                              radial-gradient(circle at 80% 70%, rgba(255,215,0,0.08) 1.5%, transparent 2%);
+            background-size: 35px 35px, 28px 28px;
+            border-radius: 48px 24px 64px 24px;
+            box-shadow: 0 20px 35px rgba(0,0,0,0.3), inset 0 1px 4px rgba(255,255,200,0.6);
+            padding: 25px 22px 35px;
+            position: relative;
+            transition: transform 0.2s ease;
+        }
+
+        /* 中式挂轴装饰线 */
+        .invitation-card::before,
+        .invitation-card::after {
+            content: "✽";
+            font-size: 28px;
+            color: #FFD966;
+            position: absolute;
+            opacity: 0.5;
+            font-family: monospace;
+        }
+        .invitation-card::before {
+            top: 15px;
+            left: 20px;
+            transform: rotate(-15deg);
+        }
+        .invitation-card::after {
+            bottom: 15px;
+            right: 20px;
+            transform: rotate(10deg);
+        }
+
+        /* 金色内框 */
+        .gold-border {
+            border: 2px solid #FFD966;
+            border-radius: 32px 16px 40px 16px;
+            padding: 20px 18px 25px;
+            background: rgba(255,245,220,0.06);
+            box-shadow: inset 0 0 15px rgba(255,215,0,0.2), 0 0 0 1px rgba(255,255,200,0.3);
+        }
+
+        /* 标题区域 */
+        .title-section {
+            text-align: center;
+            border-bottom: 2px solid #FFD966;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+        }
+        .title-section h1 {
+            font-size: 42px;
+            font-weight: bold;
+            color: #FFFAF0;
+            text-shadow: 2px 2px 0 #B22222;
+            letter-spacing: 6px;
+            margin-bottom: 6px;
+        }
+        .title-decoration {
+            font-size: 22px;
+            color: #FFE4A0;
+            letter-spacing: 8px;
+        }
+
+        /* 内容主体 */
+        .content {
+            color: #FFF9E8;
+            font-size: 17px;
+            line-height: 1.55;
+            text-align: center;
+        }
+
+        .date-block {
+            background: #A52A1A;
+            border-radius: 60px;
+            padding: 12px 12px;
+            margin: 20px 0;
+            border: 1px solid #FFCF7A;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.2), 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .date-block p {
+            margin: 5px 0;
+            font-weight: 500;
+        }
+        .lunar {
+            font-size: 15px;
+            color: #FFE3A4;
+        }
+        .time {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            background: rgba(0,0,0,0.2);
+            display: inline-block;
+            padding: 4px 18px;
+            border-radius: 40px;
+            margin-top: 6px;
+        }
+
+        .venue {
+            background: #FFF9F0;
+            color: #9B2E1E;
+            padding: 12px 16px;
+            border-radius: 28px;
+            margin: 20px 0;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 5px 0 #B95C3A;
+        }
+        .venue p {
+            margin: 5px 0;
+            font-size: 15px;
+        }
+        .venue .main-name {
+            font-size: 18px;
+            color: #C0392B;
+        }
+
+        .couple-names {
+            font-size: 28px;
+            font-weight: bold;
+            background: rgba(255,215,0,0.18);
+            display: inline-block;
+            padding: 8px 24px;
+            border-radius: 60px;
+            margin: 10px 0;
+            letter-spacing: 2px;
+        }
+
+        .parents {
+            margin-top: 25px;
+            font-size: 18px;
+            border-top: 1px dashed #FFD966;
+            padding-top: 20px;
+            font-style: normal;
+        }
+        .parents span {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .invite-line {
+            font-size: 21px;
+            font-weight: bold;
+            background: #FFD966;
+            color: #B22222;
+            display: inline-block;
+            padding: 8px 22px;
+            border-radius: 40px;
+            margin: 10px 0 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 13px;
+            color: #FFE0A3;
+        }
+
+        .double-happiness {
+            font-size: 48px;
+            letter-spacing: 12px;
+            text-align: center;
+            color: #FFE484;
+            margin-bottom: 8px;
+        }
+
+        /* 装饰小元素 */
+        .deco-left {
+            float: left;
+            font-size: 26px;
+            color: #FFD966;
+            opacity: 0.7;
+        }
+        .deco-right {
+            float: right;
+            font-size: 26px;
+            color: #FFD966;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 500px) {
+            .invitation-card { padding: 18px 15px 25px; }
+            .title-section h1 { font-size: 34px; letter-spacing: 3px; }
+            .couple-names { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+<div class="invitation-card">
+    <div class="gold-border">
+        <div class="double-happiness">
+            🫸❤️🫷 囍 囍 🫸❤️🫷
+        </div>
+        <div class="title-section">
+            <h1>回门宴邀请函</h1>
+            <div class="title-decoration">叩谢亲友·敬备薄酌 </div>
+        </div>
+
+        <div class="content">
+            <div class="date-block">
+                <p><strong>公历 2026 年 9 月 29 日</strong>（星期二）</p>
+                <p class="lunar">🌙 农历 丙午年 八月十九</p>
+                <p class="time">⏳ 中午 11:00 恭候 &nbsp;|&nbsp; 11:30 入席 ⏳</p>
+            </div>
+
+            <div class="venue">
+                <p>🏮 <strong>柴火农庄</strong> 🏮</p>
+                <p>浏阳市枨冲镇青草社区</p>
+                <p style="font-size:13px; word-break: break-all;">📍 湖南省长沙市浏阳市青草村龙背组3号</p>
+            </div>
+
+            <p>为小女</p>
+            <div class="couple-names">
+                 胡峥妮 & 李瑞贤 
+            </div>
+            <p>举行回门答谢宴</p>
+
+            <div class="invite-line">
+                恭请 携眷光临 
+            </div>
+
+            <div class="parents">
+                <span>胡仲庄  &nbsp;&nbsp; 刘月珍</span><br>
+                敬邀
+            </div>
+
+            <div class="footer-note">
+                ～ 席设柴火农庄·静候亲人 ～
+            </div>
+        </div>
+
+        <div style="clear: both;"></div>
+        <div class="deco-left">🍷</div>
+        <div class="deco-right">🍚</div>
+        <div style="clear: both; margin-top: 15px; text-align: center; font-size: 18px; color: #FFE6B3;">
+            敬备薄酒 · 全家恭迎 
+        </div>
+    </div>
+</div>
+</body>
+</html>
