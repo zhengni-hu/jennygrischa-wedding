@@ -336,8 +336,8 @@
          <!-- Add this RIGHT BEFORE the closing </div> and </body> tags -->
 
 <!-- ===== HOTEL RECOMMENDATION SECTION ===== -->
-<div style="background: white; border-radius: 20px; padding: 25px; margin: 50px 0 30px 0; text-align: left; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-    <h2 style="color: #7a5a44; font-size: 24px; margin-bottom: 15px; text-align: center;">🏨 Recommended Hotels for Guests</h2>
+<div id="hotels" style="background: white; border-radius: 20px; padding: 25px; margin: 30px 0; text-align: left; box-shadow: 0 2px 10px rgba(0,0,0,0.05); scroll-margin-top: 100px;">
+    <h2 style="color: #7a5a44; font-size: 24px; margin-bottom: 15px; text-align: center;"> Recommended Hotels for Guests</h2>
     <p style="text-align: center; color: #9b7659; margin-bottom: 20px;">Special wedding guest rates available!</p>
     
     <div id="weddingHotelsContainer"></div>
@@ -412,41 +412,41 @@
             id: 1,
             name: "Liuyang International Hotel",
             location: "Liuyang City Center",
-            price: 68,
+            price: "¥480",
             rating: 4.5,
             image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=200",
             distance: "15 min from venue",
-            phone: "+86 731 1234 5678"
+            phone: "0731-1234 5678"
         },
         {
             id: 2,
             name: "Man Yu Man Forest Lodge",
             location: "Next to Wedding Venue",
-            price: 89,
+            price: "¥620",
             rating: 4.8,
             image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=200",
             distance: "On-site accommodation",
-            phone: "+86 731 8765 4321"
+            phone: "0731-8765 4321"
         },
         {
             id: 3,
             name: "GreenTree Inn Liuyang",
             location: "Changxing Road",
-            price: 55,
+            price: "¥380",
             rating: 4.2,
             image: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=200",
             distance: "20 min from venue",
-            phone: "+86 731 2468 1357"
+            phone: "0731-2468 1357"
         },
         {
             id: 4,
             name: "Ming Cheng Hotel",
             location: "Jingyang Square",
-            price: 72,
+            price: "¥500",
             rating: 4.4,
             image: "https://images.unsplash.com/photo-1431274172761-fca41d930114?w=200",
             distance: "18 min from venue",
-            phone: "+86 731 3698 1472"
+            phone: "0731-3698 1472"
         }
     ];
     
@@ -461,7 +461,7 @@
                     <div class="wedding-hotel-name">🏨 ${hotel.name}</div>
                     <div style="font-size: 12px; color: #9b7659;">📍 ${hotel.location} • ${hotel.distance}</div>
                     <div>⭐ ${hotel.rating}/5</div>
-                    <div class="wedding-hotel-price">$${hotel.price} USD / night</div>
+                    <div class="wedding-hotel-price">${hotel.price} / night</div>
                     <div style="font-size: 11px; color: #7a5a44;">📞 ${hotel.phone}</div>
                 </div>
                 <button class="wedding-book-btn" onclick="bookWeddingHotel(${hotel.id})">Book Now →</button>
@@ -471,13 +471,12 @@
     
     function bookWeddingHotel(hotelId) {
         const hotel = weddingHotels.find(h => h.id === hotelId);
-        alert(`🎉 Thank you for booking ${hotel.name}!\n\n📍 Location: ${hotel.location}\n💰 Special wedding rate: $${hotel.price}/night\n📞 Need help? Call: ${hotel.phone}\n\nMention "Grischa & Jenny's Wedding" for the special rate!`);
+        alert(`🎉 Thank you for booking ${hotel.name}!\n\n📍 Location: ${hotel.location}\n💰 Special wedding rate: ${hotel.price}/night\n📞 Call: ${hotel.phone}\n\n💡 Mention "Grischa & Jenny's Wedding" for the special rate!`);
     }
     
     displayWeddingHotels();
 </script>
-
-<!-- ===== END HOTEL SECTION ===== -->
+        
 
 <!-- Your existing footer/p -->
 <p style="font-size: 12px; color: #bb9b82; margin-top: 50px;">Liuyang, China</p>       
